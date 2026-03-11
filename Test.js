@@ -1,9 +1,14 @@
-console.log("Hello");
-console.log("Hi there");
-console.log("kro");
-console.log("open up")
-console.log("Fir se check kr rha hu");
-console.log("Revalidation");
-//tumko ekha hai bss ye ki kaise git hub me push krte hai...
-//delha hai 
-//comittment 
+let responses = [200, 201, 404, 500, 404, 200, 503];
+
+let uniqueResponses = [... new Set(responses)];
+console.log("Unique responses",uniqueResponses);
+
+for(const response of responses){
+    if(response >=200 && response <=299){
+        console.log(`${response} is for successful`);
+    }
+    else{
+        console.log(`${response} is a first unsuccess code`);
+        break;
+    }
+}
