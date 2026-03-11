@@ -1,6 +1,6 @@
 let numbers = [12, 12, 14, 13, 11, 21, 21, 22, 22];
 
-let withoutDuplicate = [...new Set(numbers)].sort((a,b)=>a-b);
+let withoutDuplicate = [...new Set(numbers)].sort((a,b)=>a-b); //removing duplicate ...new Set() + shorting the output ((a,b)=>a-b)
 
 
 console.log("Actual Numbers :- "+numbers);
